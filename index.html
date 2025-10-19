@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login & Signup</title>
+  </head>
+  <body>
+    <!-- Login/Signup Container -->
+    <div class="container" id="auth-container">
+      <!-- Welcome Section -->
+      <div class="welcome-section">
+        <div id="welcome-login">
+          <!-- <img src="./icons8-registration.png" alt=""> -->
+          <img src="./6681204.png" alt="" width="100">
+          <!-- <img src="./11284777.png" alt="" width="100"> -->
+          <h1>Get Started</h1>
+          <p>Start with sign up or sign in</p>
+        </div>
+        <div id="welcome-signup" class="hidden">
+          <h1>Welcome Back</h1>
+          <p>Hey! Good to see you again</p>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="form-section">
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signup-form">
+          <h2 class="form-title">Sign Up</h2>
+          <p class="form-subtitle">Hello! let's join with us</p>
+
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="signup-email">Email</label>
+              <input type="email" id="signup-email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" required />
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" required />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="privacy-policy" required />
+              <label for="privacy-policy">I agree with privacy policy</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">SIGN UP</button>
+          </form>
+
+          <div class="form-footer">
+            <p>
+              You already have an account?
+              <a href="#" id="switch-to-login">Sign in</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container hidden" id="login-form">
+          <h2 class="form-title">Welcome Back</h2>
+          <p class="form-subtitle">Hey! Good to see you again</p>
+
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="login-email">Email</label>
+              <input type="email" id="login-email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" required />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </div>
+
+            <div class="form-group">
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">SIGN IN</button>
+          </form>
+
+          <div class="form-footer">
+            <p>
+              Don't have an account?
+              <a href="#" id="switch-to-signup">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message Display -->
+    <div id="message" class="message"></div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
